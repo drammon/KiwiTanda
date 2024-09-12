@@ -1,14 +1,149 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
-*{
-    font-family: "Pacifico", cursive;
-    font-weight: 400;
-    font-style: normal;
-    text-decoration: none;
-    text-decoration-color: brown;
+
+
+body {
+    font-family: pacifico;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
 }
 
-.h1, h2, h3{
-    color: red;
-    
+header {
+    background-color: #e775e2;
+    padding: 20px;
+    text-align: center;
+    justify-content: space-between;
+}
+
+header h1, header h2 {
+    margin: 0;
+}
+.logo {
+    width: 100px;
+}
+header{
+    background-color: #f8d800;
+    padding: 20px;
+    display: flex;
+    text-align: center;
+    position: fixed; /* Fixes the header to the top */
+    top: 0; /* Aligns it to the top */
+    width: 100%; /* Makes it span across the screen */
+    z-index: 1000; /* Ensures the header stays on top of other content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds a slight shadow */
+}
+
+body {
+    margin-top: 120px; /* Adds margin to prevent content from being hidden under the fixed header */
+}
+
+
+.navBar {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+}
+
+.navBar a {
+    margin-left: 10px;
+}
+
+.catalogContainer ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.catalogContainer li {
+    margin-bottom: 10px;
+}
+
+/* Flexbox Layout for Products */
+.elements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 15px;
+}
+
+.fruitsContent, .treatsContent, .souvenirsContent {
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+fieldset {
+    border: none;
+    padding: 10px;
+    margin: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+/* Responsive Media Queries */
+@media screen and (max-width: 768px) {
+    .navBar {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .navBar a {
+        margin: 5px;
+    }
+
+    .fruitsContent, .treatsContent, .souvenirsContent {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    header h2 {
+        font-size: 1.2em;
+    }
+
+    .catalogContainer h3, .catalogContainer li {
+        text-align: center;
+    }
+
+    .catalogContainer ul {
+        padding: 0;
+    }
+
+    .elements img {
+        width: 100%;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #f8d800;
+    text-align: center;
+    padding: 20px;
+}
+
+footer h2 a {
+    text-decoration: none;
+    color: black;
 }
