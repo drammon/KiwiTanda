@@ -83,7 +83,7 @@ body {
     color: white;
 }
 header {
-    background-color: var(--a); /* Using root color */
+    background-color: var(--a);
     padding: 20px;
     display: flex;
     justify-content: space-around;
@@ -213,7 +213,7 @@ img {
     padding: 5px;
 }
 
-/* Responsive Media Queries */
+
 @media screen and (max-width: 768px) {
     .navBar {
         display: grid;
@@ -253,9 +253,9 @@ img {
     }
 }
 
-/* Footer */
+
 footer {
-    background-color: var(--third); /* Using root color */
+    background-color: var(--third); 
     display: flex;
     color: white;
     flex-wrap: wrap;
@@ -315,11 +315,11 @@ button:disabled {
   
     cursor: pointer;
    
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transições suaves */
-    z-index: 1000; /* Garante que o botão fique acima de outros elementos */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    z-index: 1000; 
 }
 
-/* Estilo do botão ao passar o mouse */
+
 .promo:hover {
-    transform: scale(1.1); /* Expande o botão em 10% */
+    transform: scale(1.1); 
 }
