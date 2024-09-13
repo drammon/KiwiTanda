@@ -1,98 +1,214 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
+:root {
+    --b: #47663f;
+    --a: #a8b470;
+    --first: #727f39;
+    --second: #ccd5ae;
+    --third: #ccd5ae;
+    --fourth: #f6f7f3;
+    --fifth: #2d5322;
+}
+*{
+    text-decoration: none;
+}
+.emailContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+/* start login */
 
+.loginContainer {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    flex-wrap: wrap;
+}
+.loginContainer fieldset {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    flex-wrap: wrap;
+    width: 30vh;
+    border-radius: 3%;
+}
+/* end login */
 body {
-    font-family: pacifico;
+    font-family: 'Pacifico', cursive;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f4f4f4;
-}
+    background-color: var(--third);
 
+    
+}
+.brand h2{
+    color: white;
+}
+.brand {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    flex-wrap: wrap;
+    
+
+}
+.brand fieldset {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    flex-wrap: wrap;
+    width: 30vw;
+
+}
+.log {
+    
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    flex-wrap: wrap;
+}
+.log h1{
+    color: var(--fifth);
+}
+.log h2 {
+    color: white;
+}
 header {
-    background-color: #e775e2;
+    background-color: var(--a); /* Using root color */
     padding: 20px;
-    text-align: center;
-    justify-content: space-between;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    z-index: 1000; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
-
+.header brand {
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
 header h1, header h2 {
     margin: 0;
+    color:white; 
+    justify-items: flex-start;
 }
+
 .logo {
     width: 100px;
 }
-header{
-    background-color: #f8d800;
-    padding: 20px;
-    display: flex;
-    text-align: center;
-    position: fixed; /* Fixes the header to the top */
-    top: 0; /* Aligns it to the top */
-    width: 100%; /* Makes it span across the screen */
-    z-index: 1000; /* Ensures the header stays on top of other content */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds a slight shadow */
-}
 
 body {
-    margin-top: 120px; /* Adds margin to prevent content from being hidden under the fixed header */
+    margin-top: 120px;
 }
-
 
 .navBar {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     padding: 10px 20px;
 }
 
 .navBar a {
     margin-left: 10px;
+    color: var(--third); 
+}
+
+a, h1, h2, h3 :visited {
+    color: var(--fifth);
+    text-decoration: none;
 }
 
 .catalogContainer ul {
+    
     list-style-type: none;
     padding: 0;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    flex-direction: row;
-
 }
 
-.catalogContainer li {
-    margin-bottom: 10px;
+.catalogContainer ul a {
+    font-size: 20px;
+    color: var(--b);
 }
-
-/* Flexbox Layout for Products */
-.elements {
+.section-title{
     display: flex;
     justify-content: center;
-    align-items: center;
+}
+.catalogContainer li {
+    margin-bottom: 10px;
+    
+}
+
+
+.elements {
+    display: flex;
     flex-direction: column;
-    margin: 15px;
+    justify-content: center;
+    align-items: center;
 }
 
 .fruitsContent, .treatsContent, .souvenirsContent {
-    display: flex;
-    flex-wrap:wrap ;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 15px;
     padding: 20px;
+    background-color: var(--fourth); /* Root color for sections */
 }
+.productsContainer {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.productContainer form fieldset{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
+
+}
+.productContainer {
+    margin-top: 60px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+
+}
+.productsContainer p {
+    font-size: 45px;
+    color: var(--fifth);
+}
 fieldset {
     border: none;
     padding: 10px;
     margin: 20px;
-    background-color: #ffffff;
+    background-color: var(--fourth); /* Using root color */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 80vw;
 }
 
 img {
     max-width: 100%;
     height: auto;
-    border: 1px solid #ddd;
     border-radius: 8px;
     padding: 5px;
 }
@@ -100,17 +216,14 @@ img {
 /* Responsive Media Queries */
 @media screen and (max-width: 768px) {
     .navBar {
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .navBar a {
-        margin: 5px;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
     }
 
     .fruitsContent, .treatsContent, .souvenirsContent {
-        flex-direction: column;
-        align-items: center;
+        grid-template-columns: 1fr;
+        justify-items: center;
     }
 }
 
@@ -131,6 +244,10 @@ img {
         padding: 0;
     }
 
+    .elements {
+        grid-template-columns: 1fr;
+    }
+
     .elements img {
         width: 100%;
     }
@@ -138,12 +255,71 @@ img {
 
 /* Footer */
 footer {
-    background-color: #f8d800;
+    background-color: var(--third); /* Using root color */
+    display: flex;
+    color: white;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     padding: 20px;
+
+}
+footer fieldset {
+    background-color: var(--a);
 }
 
 footer h2 a {
     text-decoration: none;
-    color: black;
+    color: white;
+}
+
+.click {
+    color: var(--fifth); 
+    list-style: none;
+}
+button {
+    font-family: pacifico;
+    background-color: var(--second); 
+    color: white;              
+    padding: 10px 20px;       
+    border: none;              
+    border-radius: 50%;        
+    cursor: pointer;           
+    font-size: 16px;           
+}
+
+button:hover {
+    background-color: #45a049;
+    color: white;
+}
+
+button:active {
+    color: white;
+    background-color: #3e8e41;
+}
+
+button:disabled {
+    color: white;
+    background-color: #ddd; 
+    cursor: not-allowed;   
+}
+
+.promo {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    
+    border: none;
+    padding: 10px 20px;
+  
+    cursor: pointer;
+   
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transições suaves */
+    z-index: 1000; /* Garante que o botão fique acima de outros elementos */
+}
+
+/* Estilo do botão ao passar o mouse */
+.promo:hover {
+    transform: scale(1.1); /* Expande o botão em 10% */
 }

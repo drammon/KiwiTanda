@@ -4,32 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
-    <title>Q-Tanda</title>
+    <title>KiwiTanda</title>
 </head>
-<header>
-    <p><a href="../../index.html">⬅️Voltar</a></p>
-    <h1>Q-Tanda</h1>
-    <h2>The juicier option!</h2>
-</header>
+
 <body>
+
+    <div class="brand">
+        
+        <div class="logo">        
+            <a href="/index.html"><img src="../../images/kiwi-logo.png" alt="Store Logo" class="logo"></a>
+        </div>
+        
+        <div class="name"> 
+            <h1><a href="/index.html">KiwiTanda</a></h1>
+            <h2>The juicier option!</h2>
+        </div>
     <p>Please, insert your information below to recover your key:</p>
     <div id="loginContainer">
         <form action="">
             <fieldset>
                 <legend>Recover Key</legend>
                 <div class="emailContent">
-                    <label for="email">E-mail <input type="email" id="userEmailRecover" value="Insira seu e-mail"/> </label>
-                    
+                    <label for="email">E-mail <input type="email" id="userEmailRecover" placeholder="Insert your e-mail"/> </label>
+                    <p></p>
+                    <div class="button">
+                        <button id="submitRecover"><a href="/index.html">Submit</a></button>
+                    </div>
                 </div>
-                <p>
 
-                <div class="button">
-                    <button id="submitRecover">Submit</button>
-                </div>
+                
             </fieldset>  
         </form>
     </div>
-    
+    </div>
     
 </body>
 </html>

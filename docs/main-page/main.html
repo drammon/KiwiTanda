@@ -4,118 +4,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
-
-    <title>Q-Tanda</title>
+    <title>KiwiTanda</title>
 </head>
+<body>
+
 <header>
-    <p><a href="../../index.html">Back</a></p>
-     
     
     <div class="logo">
-        <a href="./main.html"><img src="../../images/store-logo.png" alt="" class="logo"></a>
-        
+        <a href="./main.html"><img src="../../images/kiwi-logo.png" alt="Store Logo" class="logo"></a>
     </div>
+
     <div class="name">
-        <h1><a href="main.html">Q-Tanda</a></h1>
+        <h1><a href="main.html">KiwiTanda</a></h1>
         <h2>The juicier option!</h2>
     </div>
     
-    <div class="navBar" align="right">
+    <div class="navBar">
         <a href="shopList">🛒</a>
         <a href="about/about.html">About</a><br>
         <a href="../../index.html">Exit</a>
     </div>
-   
-
 </header>
-<body>
-    <br>
-    <div class="catalogContainer">
 
-        <ul>
-            <li>
-            
-                <a href="#fruits"><p>Fruits</p></a>
-            </li>
-            
-            <li>
-                <a href="#treats"><p>Treats</p></a>
-            </li>
-            
-            <li>
-                <a href="#souvenirs"><p>Souvenirs</p></a>
-            </li>
+<br>
 
-        </ul>
-    </div>
-   
-    <div class="fruitsContainer">
-        <fieldset>
+<div class="catalogContainer">
+    <ul>
+        <li><a href="#fruits"><h2>Fruits</h2></a></li>
+        <li><a href="#treats"><h2>Treats</h2></a></li>
+        <li><a href="#souvenirs"><h2>Souvenirs</h2></a></li>
+    </ul>
+</div>
 
-        <h2 id="fruits">Fruits:</h2>
+<div class="productsContainer">
+    <fieldset>
+        <p id="fruits" class="section-title">Fruits</p>
         <div class="fruitsContent">
+            <div class="elements">
+                <a href="buy/details/product1.html"><img src="../../images/apple.png" alt="Apple" width="300"></a>
+                <h3>R$35,00/Kg</h3>
+                <button id="purchaseLogin"><a href="/docs/main-page/buy/details/purchase-made.html">🛒BUY NOW🛒</a></button>            </div>
 
             <div class="elements">
-                <a href="buy/details/product1.html"><img src="../../images/apple.png" width="300">🛒</a>
+                <a href="buy/details/product2.html"><img src="../../images/pineapple1.png" alt="Pineapple" width="300"></a>
+                <h3>R$55,00/Kg</h3>
+                <button id="purchaseLogin"><a href="/docs/main-page/buy/details/purchase-made.html">🛒BUY NOW🛒</a></button>
             </div>
 
-            <div class="elements"></div>
-                <a href="buy/details/product2.html"><img src="../../images/pineapple1.png" width="300">🛒</a>
-            </div>
-
-            <div class="elements"></div>
-                <a href="buy/details/product3.html"><img src="../../images/pear.png" width="300">🛒</a>
-            </div>
-
+            <div class="elements">
+                <a href="buy/details/product3.html"><img src="../../images/pear.png" alt="Pear" width="300"></a>
+                <h3>R$75,00/Kg</h3>
+                <button id="purchaseLogin"><a href="/docs/main-page/buy/details/purchase-made.html">🛒BUY NOW🛒</a></button>            </div>
         </div>
+    </fieldset>
 
-        </fieldset>
-    </div>
-    <div class="treatsContainer">
-        <fieldset>
-        <h2 id="treats">Treats and Sweets:</h2>
+    <fieldset>
+        <p id="treats" class="section-title">Treats and Sweets</p>
         <div class="treatsContent">
             <div class="elements">
-                <a href="buy/details/product4.html"><img src="/images/cake.png" width="300">🛒</a>
-            </div>
+                <a href="buy/details/product4.html"><img src="/images/cake.png" alt="Cake" width="300"></a>
+                <h3>R$35,00/Kg</h3>
+                <button id="purchaseLogin"><a href="/docs/main-page/buy/details/purchase-made.html">🛒BUY NOW🛒</a></button>            </div>
             
-            <div class="elements">            
-                <a href="buy/details/product5.html"><img src="/images/icecream.png" width="300">🛒</a>
-            </div>
             <div class="elements">
-                <a href="buy/details/product6.html"><img src="/images/milkshake.png" width="300">🛒</a>
-            </div>
-            
+                <a href="buy/details/product5.html"><img src="/images/icecream.png" alt="Ice Cream" width="300"></a>
+                <h3>R$5,00</h3>
+                <button id="purchaseLogin"><a href="/docs/main-page/buy/details/purchase-made.html">🛒BUY NOW🛒</a></button>            </div>
 
+            <div class="elements">
+                <a href="buy/details/product6.html"><img src="/images/milkshake.png" alt="Milkshake" width="300"></a>
+                <h3>R$9,00</h3>
+                <button id="purchaseLogin"><a href="/docs/main-page/buy/details/purchase-made.html">🛒BUY NOW🛒</a></button>            </div>
         </div>
-        </fieldset>
-    </div>
-    <div class="souvenirsContainer">
-        <fieldset>
-        <h2 id="souvenirs">Souvenirs:</h2>
+    </fieldset>
+
+    <fieldset>
+        <p id="souvenirs" class="section-title">Souvenirs</p>
         <div class="souvenirsContent">
-
             <div class="elements">
-                <a href="buy/details/product7.html"><img src="/images/cherry-shirt.png" width="300">🛒</a>
-            </div>
+                <a href="buy/details/product7.html"><img src="/images/cherry-shirt.png" alt="Cherry Shirt" width="300"></a>
+                <h3>R$55,90</h3>
+                <button id="purchaseLogin"><a href="/docs/main-page/buy/details/purchase-made.html">🛒BUY NOW🛒</a></button>            </div>
             
-            <div class="elements">            
-                <a href="buy/details/product8.html"><img src="/images/pineapple-shirt.png" width="300">🛒</a>
-            </div>
             <div class="elements">
-                <a href="buy/details/product9.html"><img src="/images/strawberry-shirt.png" width="300">🛒</a>
+                <a href="buy/details/product8.html"><img src="/images/pineapple-shirt.png" alt="Pineapple Shirt" width="300"></a>
+                <h3>R$55,90</h3>
+                <button id="purchaseLogin"><a href="/docs/main-page/buy/details/purchase-made.html">🛒BUY NOW🛒</a></button>            </div>
+
+            <div class="elements">
+                <a href="buy/details/product9.html"><img src="/images/strawberry-shirt.png" alt="Strawberry Shirt" width="300"></a>
+                <h3>R$55,90</h3>
+                <button id="purchaseLogin"><a href="/docs/main-page/buy/details/purchase-made.html">🛒BUY NOW🛒</a></button>
             </div>
-
         </div>
-
-        </fieldset>
-    </div>
-    <footer>
-        <fieldset>
-            <br>
-        <h2><a href="https://www.linkedin.com/in/dayvid-santos-2166501b3/" target="_blank">Click here</a> to contact us!</h2>
-        </fieldset>
+    </fieldset>
+</div>
+<div class="promo">
+    <a href="/docs/main-page/buy/details/promo.html"><img src="/images/R_100_00-removebg-preview.png" alt=""></a>
+</div>
+<footer>
+    <fieldset>
+        <h2><a href="https://www.linkedin.com/in/dayvid-santos-2166501b3/" target="_blank" class="click">Click here</a> to contact us!</h2>
         <h2><a href="https://www.linkedin.com/in/dayvid-santos-2166501b3/" target="_blank">©Dayvid Ramon</a> - Softwares Developer</h2>
-    </footer>
+    </fieldset>
+</footer>
+
+
 </body>
 </html>
