@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         if (loginPasswordField.value.trim() != key || loginNameField.value.trim() != user) {
-            alert("This user does'nt have permission to access yet. Wait for the ");
+            alert("This user does'nt have permission to access yet. Try 'admin' for username and '123456' for password.");
             validLogin = false;
         }
 
