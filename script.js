@@ -50,6 +50,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const loginForm = document.getElementById("loginForm");
     const loginNameField = document.getElementById("userName");
     const loginPasswordField = document.getElementById("pwd");
+    
+    var user = "admin"
+    var key = "123456" 
 
     loginForm.addEventListener("submit", function (event) {
         event.preventDefault(); 
@@ -57,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
         let validLogin = true;
 
         
-        if (loginNameField.value.trim() === "" || loginNameField.value === "Insira seu nome") {
+        if (loginNameField.value.trim() === "") {
             alert("Please enter your username.");
             validLogin = false;
         }
@@ -65,6 +68,11 @@ document.addEventListener("DOMContentLoaded", function () {
         
         if (loginPasswordField.value.trim() === "") {
             alert("Please enter your password.");
+            validLogin = false;
+        }
+
+        if (loginPasswordField.value.trim() != key || loginNameField.value.trim() != user) {
+            alert("This user does'nt have permission to access yet. Wait for the ");
             validLogin = false;
         }
 

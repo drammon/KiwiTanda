@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
 :root {
     --b: #47663f;
     --a: #a8b470;
@@ -10,6 +12,8 @@
     --fifth: #2d5322;
 }
 *{
+    margin: 0px;
+    padding: 0px;
     text-decoration: none;
 }
 .emailContent{
@@ -108,11 +112,15 @@ header h1, header h2 {
 }
 
 .logo {
-    width: 100px;
+    width: 150px;
 }
 
 body {
     margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .navBar {
@@ -126,23 +134,54 @@ body {
     margin-left: 10px;
     color: var(--third); 
 }
+h1{
+    font-size: 4em;
+    
 
+}
+h2{
+    font-size: 2em;
+}
+h3{
+    font-size: 1.5em;
+    font-family: "Josefin Sans", sans-serif;
+}
+p {
+    font-size: 1.5em;
+    font-family: "Josefin Sans", sans-serif;
+}
 a, h1, h2, h3 :visited {
     color: var(--fifth);
     text-decoration: none;
 }
 
+.name {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+.catalogContainer{
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+}
 .catalogContainer ul {
     
     list-style-type: none;
     padding: 0;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-around;
+
+ 
 }
 
 .catalogContainer ul a {
+    
     font-size: 20px;
     color: var(--b);
 }
@@ -151,7 +190,9 @@ a, h1, h2, h3 :visited {
     justify-content: center;
 }
 .catalogContainer li {
-    margin-bottom: 10px;
+    
+    margin-top: 90px;
+    
     
 }
 
@@ -255,6 +296,7 @@ img {
 
 
 footer {
+    font-family: "Josefin Sans", sans-serif;
     background-color: var(--third); 
     display: flex;
     color: white;
@@ -263,6 +305,7 @@ footer {
     justify-content: center;
     text-align: center;
     padding: 20px;
+    
 
 }
 footer fieldset {
@@ -322,4 +365,12 @@ button:disabled {
 
 .promo:hover {
     transform: scale(1.1); 
+}
+.hardparts {
+    margin: 3em;
+    font-family: "Josefin Sans", sans-serif;
+}
+.git{
+    
+    height: 30px;
 }
