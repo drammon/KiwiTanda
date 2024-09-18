@@ -256,6 +256,17 @@ img {
 
 
 @media screen and (max-width: 768px) {
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+    h3,p{
+        font-size: 1.5em;
+
+    }
     .navBar {
         display: grid;
         grid-template-columns: 1fr;
@@ -266,15 +277,28 @@ img {
         grid-template-columns: 1fr;
         justify-items: center;
     }
+    .promo {
+        max-width: 150px;
+        min-width: 100px;
+        
+    }
 }
 
 @media screen and (max-width: 480px) {
-    header h1 {
-        font-size: 1.5em;
+    h1 {
+        font-size: 2em;
     }
 
-    header h2 {
-        font-size: 1.2em;
+    h2 {
+        font-size: 1.5em;
+    }
+    h3,p{
+        font-size: 1em;
+
+    }
+    .promo {
+        max-width: 100px;
+        min-width: 50px;
     }
 
     .catalogContainer h3, .catalogContainer li {
@@ -327,9 +351,10 @@ button {
     color: white;              
     padding: 10px 20px;       
     border: none;              
-    border-radius: 50%;        
+    border-radius: 15px;        
     cursor: pointer;           
-    font-size: 16px;           
+    font-size: 16px;  
+    margin: 15px;         
 }
 
 button:hover {
